@@ -100,9 +100,9 @@ let opcoes = 0
    let valoresAposDescontos = aplicarDescontos(SomadositensdoCarrinho, categoriaCliente);
    let desconto = SomadositensdoCarrinho - valoresAposDescontos;
 document.write(`Os itens comprados foram ${itensCarrinho.join(" - ")}<br>`)
-document.write(`O valor total é R$${SomadositensdoCarrinho}<br>`)
-document.write(`O valor do desconto é R$${desconto}<br>`)
-document.write(`O valor após os descontos é R$${valoresAposDescontos}`)
+document.write(`O valor total é R$${SomadositensdoCarrinho.toFixed(2)}<br>`)
+document.write(`O valor do desconto é R$${desconto.toFixed(2)}<br>`)
+document.write(`O valor após os descontos é R$${valoresAposDescontos.toFixed(2)}`)
 }
 gerarRecibo()
 </script>
